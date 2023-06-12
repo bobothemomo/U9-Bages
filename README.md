@@ -6,9 +6,9 @@ Takım Elemanları
 
 Saner Aykanat: Product Owner / Developer
 
-Begüm Odabaş : Game Artist
-
 Barış Değirmenci : Scrum Master / Developer
+
+Begüm Odabaş : Game Artist
 
 Hayrettin Alper Sapan : Developer
 
