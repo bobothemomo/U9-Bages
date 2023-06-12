@@ -5,45 +5,34 @@ using UnityEngine.InputSystem;
 
 public class PlayerKontrol : MonoBehaviour
 {
-    [SerializeField] float speed = 5f, jumpForce;
+    public float hiz = 5f;  
 
-    [HideInInspector] public Vector2 movement;
-
-    Rigidbody playerRB;
+    private Animator animator;  
 
     private void Start()
     {
-        playerRB = GetComponent<Rigidbody>();
+        animator = GetComponent<Animator>();  
     }
 
-    void Update()
+    private void Update()
     {
-        //float Yatay = 0f;
-        //float Dikey = 0f;
+        float yatayHareket = Input.GetAxis("Horizontal"); 
+        float dikeyHareket = Input.GetAxis("Vertical");  
 
-        //if (Input.GetKey(KeyCode.W))
-        //    Dikey = 1f;
-        //else if (Input.GetKey(KeyCode.S))
-        //    Dikey = -1f;
+        Vector3 hareket = new Vector3(yatayHareket, 0f, dikeyHareket);  
 
-        //if (Input.GetKey(KeyCode.A))
-        //    Yatay = -1f;
-        //else if (Input.GetKey(KeyCode.D))
-        //    Yatay = 1f;
+        if (hareket.magnitude > 0f) 
+        {
+            Quaternion yeniYon = Quaternion.LookRotation(hareket);  
+            transform.rotation = Quaternion.Slerp(transform.rotation, yeniYon, 0.15f);  
 
-        //Vector3 movement = new Vector3(Yatay, 0f, Dikey) * speed * Time.deltaTime;
-        //transform.Translate(movement);
+            transform.Translate(hareket * hiz * Time.deltaTime, Space.World);  
+        }
+
+        animator.SetFloat("Hiz", hareket.magnitude);  
     }
+}
 
-    private void FixedUpdate()
-    {
-        playerRB.velocity = new Vector3(movement.x * speed, playerRB.velocity.y, movement.y * speed);
-        Debug.Log(playerRB.velocity.y);
-    }
 
-    void OnMove(InputValue value)
-    {
-        movement = value.Get<Vector2>();
-    }
-} 
+
 
