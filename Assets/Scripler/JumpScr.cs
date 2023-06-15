@@ -17,31 +17,13 @@ public class JumpScr : MonoBehaviour
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-
-        //    animator.SetTrigger("jump");
-
-
-        //    rb.AddForce(new Vector3(0f, jumpForce, 0f), ForceMode.Impulse);
-
-
-        //}
-
-        //if (Input.GetKey(KeyCode.Space))
-        //{
-        //    animator.SetBool("jump", true);
-        //}
-        //else
-        //{
-        //    animator.SetBool("jump", false);
-        //}
         SetAnim();
     }
 
     void SetAnim()
     {
         moveValue = playerControl.movement.magnitude;
+        
 
         animator.SetFloat("Speed", moveValue);
         animator.SetFloat("Yatay", playerControl.movement.y);
