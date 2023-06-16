@@ -13,34 +13,58 @@ public class PlayerKontrol : MonoBehaviour
 
     [SerializeField]
     private float speed;
+    public float ziplamaGucu = 5f;
+ 
 
+    private bool isGround;
+    private Rigidbody rb;
     private void Start()
     {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
+        jump(); 
+
         Move();
     }
 
+    void jump()
+    {
+        if (isGround && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb.AddForce(Vector3.up * ziplamaGucu, ForceMode.VelocityChange);
+            anim.SetTrigger("jump");
+        }
+    }
+    
     void Move()
     {
-        float yatayHareket = Input.GetAxis("Horizontal");  // Yatay hareket girişini al
-        float dikeyHareket = Input.GetAxis("Vertical");  // Dikey hareket girişini al
+        float hrz = Input.GetAxis("Horizontal");  // Yatay hareket girişini al
+        float vrt = Input.GetAxis("Vertical");  // Dikey hareket girişini al
 
-        Vector3 hareket = new Vector3(yatayHareket*speed, 0f, dikeyHareket*speed);  // Hareket vektörünü oluştur
-
-        //if (hareket.magnitude > 0f)  // Eğer karakter hareket ediyorsa
-        //{
-        //    Quaternion yeniYon = Quaternion.LookRotation(hareket);  // Hareket yönünü belirle
-        //    transform.rotation = Quaternion.Slerp(transform.rotation, yeniYon, 0.15f);  // Yavaşça dön
-
-        //    gameObject.transform.Translate(yatayHareket*Time.deltaTime,0,dikeyHareket*Time.deltaTime);
-        //}
+        Vector3 hareket = new Vector3(hrz*speed, 0f, vrt*speed);  // Hareket vektörünü oluştur
 
         anim.SetFloat("speed", hareket.magnitude);
 
+    }
+
+      void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGround = true;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGround = false;
+        }
     }
 }
 
