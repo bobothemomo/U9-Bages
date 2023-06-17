@@ -1,19 +1,18 @@
-Takım U-9 
+# Takım U-9 Bages
 
-Ürün İle İlgili Bilgiler
+## Ürün İle İlgili Bilgiler
 
-Takım Elemanları
+**Takım Elemanları**
 
-Saner Aykanat: Product Owner / Developer
+* Saner Aykanat: Product Owner / Developer
 
-Barış Değirmenci : Scrum Master / Developer
+* Barış Değirmenci : Scrum Master / Developer
 
-Begüm Odabaş : Game Artist
+* Begüm Odabaş : Game Artist
 
-Hayrettin Alper Sapan : Developer
+* Hayrettin Alper Sapan : Developer
 
-Bengisu Karpuzoğlu : Developer
+* Bengisu Karpuzoğlu : Developer
 
 
-
-SPRINT 1
+# SPRINT 1
