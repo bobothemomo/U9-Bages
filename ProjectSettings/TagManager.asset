@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Zemin
   - Ground
+  - airBall
   layers:
   - Default
   - TransparentFX

@@ -4,26 +4,15 @@ using UnityEngine;
 
 public class AirBallController : MonoBehaviour
 {
-    Animator anim;
-
-    private void Start()
+    // Start is called before the first frame update
+    void Start()
     {
-        anim = GetComponent<Animator>();
-       
+        
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        AirBall();
-
-    }
-
-    void AirBall()
-    {
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            Debug.Log("r bastýn");
-            anim.SetTrigger("throwAir");
-        }
+        
     }
 }
