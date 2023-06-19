@@ -32,3 +32,5 @@
 1. Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
 2. Harita ve karakter tasarmının değiştirilmesi kararı alınmıştır.
 3. Oyun hikayesinin ufak çaplı değiştirilmesi kararı alınmıştır.
+---
+# SPRINT 2
