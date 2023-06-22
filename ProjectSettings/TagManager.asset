@@ -7,6 +7,7 @@ TagManager:
   - Zemin
   - Ground
   - airBall
+  - door
   layers:
   - Default
   - TransparentFX
