@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 557384968682895180}
   - component: {fileID: -8644682195739943469}
   - component: {fileID: -8705133820384196631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: airBall
   m_TagString: airBall
   m_Icon: {fileID: 0}
