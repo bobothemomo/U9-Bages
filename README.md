@@ -34,3 +34,14 @@
 3. Oyun hikayesinin ufak çaplı değiştirilmesi kararı alınmıştır.
 ---
 # SPRINT 2
+* **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+* **Daily Scrum:** Daily Scrum toplantıları Discord ve Whatsapp üzerinden gerçekleştirilmiştir. Zamansal sebeplerden ötürü ek olarak Whatsapp uygulaması kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır:
+
+
+
+* **Sprint Review:** 
+**Sprint Review katılımcıları:** 
+* **Sprint Retrospective:**
+1. Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+---
+# SPRINT 3
