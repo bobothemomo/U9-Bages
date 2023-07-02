@@ -42,6 +42,6 @@
 * **Sprint Review:** 
 **Sprint Review katılımcıları:** 
 * **Sprint Retrospective:**
-1. Takım üyelerinin gelecek sprintlerde aktif olması gerektiğine vurgu yapılmıştır.
+
 ---
 # SPRINT 3
