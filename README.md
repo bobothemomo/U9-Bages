@@ -23,7 +23,7 @@
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/9e8f694e-985f-4623-b107-27945411ea89)
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/6215f6be-5416-4f73-9661-db97ffbaebeb)
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/cdf2ce28-9559-42f6-823a-89c73c74abdc)
-![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/da72604c-001a-4a26-9c89-968a9308c016)
+
 
 
 * **Sprint Review:** Alınan kararlar: Oyun teması netleştirildi, oyunda kullanılacak 4 element ve özellikleri netleştirildi görev dağılımı yapıldı, ana karakterin temel hareketleri belirlendi, ana karakterin bulunacağı haritaların taslakları oluşturuldu.
