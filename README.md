@@ -35,6 +35,7 @@
 ---
 # SPRINT 2
 * **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+* **Puan tamamlama mantığı:** Sprintin en az 100 puanla başlaması gerektiğine karar verildi. 3. Sprintin Backlog içeriğine göre puanları belirlenecektir.
 * **Daily Scrum:** Daily Scrum toplantıları Discord ve Whatsapp üzerinden gerçekleştirilmiştir. Zamansal sebeplerden ötürü ek olarak Whatsapp uygulaması kullanılmıştır. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır:[DailyScrums-Sprint2](https://github.com/bobothemomo/U9-Bages/files/11931569/DailyScrums_Sprint2.docx)
 
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/533c60fa-2425-4a43-a17c-513220a261c6)
