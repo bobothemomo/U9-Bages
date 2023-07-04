@@ -43,7 +43,7 @@
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/81668201-72a5-443c-b3e2-16678ef882e8)
 ![image](https://github.com/bobothemomo/U9-Bages/assets/100072121/e3c7b952-dcbb-464b-a03f-fe531e1fe4a3)
 
-
+* **Sprint Notları:** Karakterin temel hareketleri ve hava elementinin design kısmı tamamlandı teslim tarihi yaklaştığı için bundan sonra daha sık toplanmamız ve daha çok zaman ayırmamız gerektiğinde ortak karara varıldı.
 
 * **Sprint Review:** Alınan kararlar: Sprin 2 eksikliklerinin tamamlanması hakkında plan yapıldı.
 **Sprint Review katılımcıları:**  Eksik katılımcı bulunmamaktadır.
