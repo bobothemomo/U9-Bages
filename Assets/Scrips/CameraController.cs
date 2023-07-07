@@ -20,7 +20,7 @@ public class CameraController : MonoBehaviour
         this.transform.position = Vector3.Lerp(this.transform.position, hedef.position + hedefMesafe, Time.deltaTime * 10);
         fareX += Input.GetAxis("Mouse X") * hassasiyet;
         fareY += Input.GetAxis("Mouse Y") * hassasiyet;
-
+        //fareY = Mathf.Clamp(fareY, -25f, 25f);
         if (fareY>=25)
         {
             fareY = 25;
