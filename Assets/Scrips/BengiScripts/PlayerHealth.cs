@@ -14,16 +14,6 @@ public class PlayerHealth : MonoBehaviour
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    
-    //void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.K))
-    //    {
-    //        TakeDamage(25);
-    //        Debug.Log("oldu");
-    //    }
-    //}
-
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
