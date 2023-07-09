@@ -319,6 +319,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door1
       objectReference: {fileID: 0}
+    - target: {fileID: 7750370834963051906, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7750370834963051933, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -17343,15 +17347,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6068389609438338402, guid: c55c55a9a89311e4ab49009604e8f253, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.72
+      value: -39.23
       objectReference: {fileID: 0}
     - target: {fileID: 6068389609438338402, guid: c55c55a9a89311e4ab49009604e8f253, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.78
+      value: 8.66
       objectReference: {fileID: 0}
     - target: {fileID: 6068389609438338402, guid: c55c55a9a89311e4ab49009604e8f253, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.46
+      value: -3.05
       objectReference: {fileID: 0}
     - target: {fileID: 6068389609438338402, guid: c55c55a9a89311e4ab49009604e8f253, type: 3}
       propertyPath: m_LocalRotation.w
