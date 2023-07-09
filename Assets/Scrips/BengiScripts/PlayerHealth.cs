@@ -8,10 +8,16 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
 
     public HealthBarr healthBar;
+
+
+    public GameObject player;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
+        player = GameObject.Find("Player");
     }
 
     public void TakeDamage(int damage)
@@ -19,5 +25,15 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
 
         healthBar.SetHealth(currentHealth);
+    }
+
+    private void FixedUpdate()
+    {
+        if (currentHealth <= 0)
+        {
+            player.transform.position = new Vector3(-2.5f, 2.175f, -3f);
+
+            currentHealth = maxHealth;
+        }
     }
 }
