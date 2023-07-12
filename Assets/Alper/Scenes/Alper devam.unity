@@ -6221,6 +6221,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stairs_Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 510248444000662079, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
     - target: {fileID: 510248444000824863, guid: 9d3c6113164fd3b488040a35893b058c, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -8836,7 +8840,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7750370834963051906, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1439035722}
+      addedObject: {fileID: 1439035726}
   m_SourcePrefab: {fileID: 100100000, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
 --- !u!1001 &1297218120
 PrefabInstance:
@@ -9791,7 +9795,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7750370834962885026, guid: b7ed1f58ec447ad4fb0c93a62eb4c4b6, type: 3}
   m_PrefabInstance: {fileID: 1282318421}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1439035722
+--- !u!114 &1439035726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9800,7 +9804,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 754325973}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df06e28d82d01a64db1798d5bf150e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1005059fcf6163647a120dd6169be7e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   acilmaHizi: 30
@@ -11350,7 +11354,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6322556187633357650, guid: f5e4cf5af47ee60418f92554c028a4ce, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1921724391}
+      addedObject: {fileID: 1921724395}
   m_SourcePrefab: {fileID: 100100000, guid: f5e4cf5af47ee60418f92554c028a4ce, type: 3}
 --- !u!4 &1736510177 stripped
 Transform:
@@ -12512,7 +12516,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6322556187633357650, guid: f5e4cf5af47ee60418f92554c028a4ce, type: 3}
   m_PrefabInstance: {fileID: 1734991631}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1921724391
+--- !u!114 &1921724395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12521,11 +12525,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1921724387}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df06e28d82d01a64db1798d5bf150e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 8164dc809d7daa440981201312725786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   acilmaHizi: 30
-  hedefRotasyon: 180
+  hedefRotasyon: 360
 --- !u!1001 &1926016536
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorController : MonoBehaviour
+public class RightDoorController : MonoBehaviour
 {
     public float acilmaHizi = 30f; // Kapýnýn açýlma hýzý (derece/saniye)
     public float hedefRotasyon = 180f; // Hedef rotasyon açýsý
