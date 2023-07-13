@@ -11,7 +11,7 @@ public class PlayerKontrol : MonoBehaviour
 {
     Animator anim;
 
-    public float moveSpeed = 5f;
+    public float moveSpeed = 0f;
     public float glideForce;
     public float jumpForce = 5f;
     private bool isJumping = false;
@@ -26,14 +26,30 @@ public class PlayerKontrol : MonoBehaviour
 
     private void Update()
     {
-        float moveInput = Input.GetAxis("Horizontal");
 
-        
-        rb.velocity = new Vector3(moveInput * moveSpeed, rb.velocity.y, 0);
+        if (Input.GetKey(KeyCode.Q))
+        {
+            Move();
+            anim.SetFloat("speed", 1f);
+        }
+        else if (Input.GetKey(KeyCode.W))
+        {
+            Move();
+            anim.SetFloat("speed", 0.5f);
+
+        }
+        else
+        {
+            anim.SetFloat("speed", 0f);
+        }
+           
 
         // Zıplama girişini kontrol et
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            /*if (Input.GetKey(KeyCode.W))
+                rb.velocity = new Vector3(rb.velocity.z, jumpForce, 0);*/
+
             if (!isJumping)
             {
                 Jump();
@@ -63,6 +79,16 @@ public class PlayerKontrol : MonoBehaviour
         {
             rb.AddForce(Vector3.up * glideForce, ForceMode.Acceleration);
         }
+    }
+
+    private void Move()
+    {
+        float HorizontalInput = Input.GetAxis("Horizontal");
+        float VerticalInput = Input.GetAxis("Vertical");
+
+        Vector3 direction = new Vector3(HorizontalInput, 0, VerticalInput);
+       // rb.AddForce(direction * moveSpeed);
+        //anim.SetFloat("speed", moveSpeed);
     }
     private void Jump()
     {
