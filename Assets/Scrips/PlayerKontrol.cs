@@ -107,6 +107,13 @@ public class PlayerKontrol : MonoBehaviour
             isJumping = false;
             isDoubleJumping = false;
         }
+
+        if (collision.gameObject.CompareTag("Stairs"))
+        {
+            anim.SetBool("stairs", true);
+        }
+        else
+            anim.SetBool("stairs", false);
     }
 
 
