@@ -87,7 +87,9 @@ public class PlayerKontrol : MonoBehaviour
         float VerticalInput = Input.GetAxis("Vertical");
 
         Vector3 direction = new Vector3(HorizontalInput, 0, VerticalInput);
-       // rb.AddForce(direction * moveSpeed);
+        direction.Normalize();
+        anim.SetFloat("speed", direction.magnitude);
+        rb.AddForce(direction * moveSpeed);
         //anim.SetFloat("speed", moveSpeed);
     }
     private void Jump()
