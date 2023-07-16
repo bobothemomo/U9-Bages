@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab1baa4304b63f4fade1931f3b4f480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  topPrefab: {fileID: 8970493906562037902, guid: 59f048e4a135730489c38acd5088caad, type: 3}
+  topPrefab: {fileID: 3973597647961631049, guid: 1424eb3550d863c4fabbd0d1f6949c06, type: 3}
   firlatmaMesafesi: 1
   firlatmaHizi: 10
 --- !u!114 &1496625554211734668
@@ -326,8 +326,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ac21b66ecc28f42822d41822efdb62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.8
-  ziplamaGucu: 5
+  moveSpeed: 5
+  glideForce: 0
+  jumpForce: 5
 --- !u!1 &961310228491364812
 GameObject:
   m_ObjectHideFlags: 0
