@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.HID;
 
-public class PlayerKontrol : MonoBehaviour
+public class AirScenePlayerKontrol : MonoBehaviour
 {
     Animator anim;
 
