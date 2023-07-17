@@ -6,9 +6,6 @@ TagManager:
   tags:
   - Zemin
   - Ground
-  - airBall
-  - door
-  - Stairs
   layers:
   - Default
   - TransparentFX
@@ -16,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - player
-  - airBall
+  - Pickup
+  - 
   - 
   - 
   - 

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Alper/Scenes/Alper devam.unity.meta
 guid: 24d61a1039a123649a3f33995537de8a
+========
+guid: 89d07319d4506f6469c5467cc14f3feb
+>>>>>>>> main:Assets/Scenes/yeni karakter deneme.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
