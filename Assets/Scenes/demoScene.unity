@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -217,6 +217,66 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &366496773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 366496774}
+  - component: {fileID: 366496775}
+  m_Layer: 0
+  m_Name: Pickup Point
+  m_TagString: Untagged
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &366496774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366496773}
+  m_LocalRotation: {x: -0.14780942, y: -0, z: -0, w: 0.9890159}
+  m_LocalPosition: {x: 0.029, y: -2.45, z: 5.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 988742706}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &366496775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366496773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b436dd9afe0193408ef85f366c204e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickupMask:
+    serializedVersion: 2
+    m_Bits: 64
+  PlayerCam: {fileID: 988742707}
+  PickupTarget: {fileID: 366496774}
+  PickupRange: 10
+--- !u!4 &988742706 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1768147933063863882, guid: 941dcbc7b2835bc498d77927a7269e55, type: 3}
+  m_PrefabInstance: {fileID: 3726660999966771168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!20 &988742707 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 3378440916812718530, guid: 941dcbc7b2835bc498d77927a7269e55, type: 3}
+  m_PrefabInstance: {fileID: 3726660999966771168}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1243641500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6068389609438338402, guid: c55c55a9a89311e4ab49009604e8f253, type: 3}
@@ -451,6 +511,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1768147933063863882, guid: 941dcbc7b2835bc498d77927a7269e55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 366496774}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 941dcbc7b2835bc498d77927a7269e55, type: 3}
